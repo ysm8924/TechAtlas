@@ -1,0 +1,34 @@
+# Build
+/build
+.gradle
+/captures
+
+# Local files
+/local.properties
+
+# Android Studio IML files
+*.iml
+
+# Mac
+.DS_Store
+
+# Native Build
+.externalNativeBuild
+.cxx
+
+# IDE folder
+# Ignore the whole folder first
+/.idea/
+
+# Now, un-ignore the files and folders that should be shared
+# These contain project-wide settings.
+!/.idea/codeStyles/
+!/.idea/inspectionProfiles/
+!/.idea/migrations.xml
+!/.idea/vcs.xml
+!/.idea/misc.xml
+!/.idea/gradle.xml
+!/.idea/compiler.xml
+!/.idea/runConfigurations/
+!/.idea/copyright/
+!/.idea/.gitignore
