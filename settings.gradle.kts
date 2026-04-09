@@ -21,4 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "TechAtlas"
 include(":app")
- 
+include(":core:common")
+include(":core:network")
+include(":core:ui")
+include(":labs:java_core")
+include(":labs:kotlin_core")
