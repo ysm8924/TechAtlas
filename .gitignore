@@ -1,10 +1,10 @@
 # Build
-/build
-.gradle
+build/
+.gradle/
 /captures
 
 # Local files
-/local.properties
+local.properties
 
 # Android Studio IML files
 *.iml
