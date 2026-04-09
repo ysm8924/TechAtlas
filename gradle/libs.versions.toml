@@ -38,3 +38,5 @@ android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 # 添加缺失的 kotlin-android 插件
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+# 添加纯 Kotlin JVM 插件，用于完全脱离 Android 环境的模块
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
