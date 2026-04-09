@@ -3,6 +3,8 @@ package com.ysm.techatlas.labs.kotlin
 import com.ysm.techatlas.labs.kotlin.inline.InlineLab
 import com.ysm.techatlas.labs.kotlin.syntax.SyntaxLab
 import com.ysm.techatlas.labs.kotlin.oop.OopLab
+import com.ysm.techatlas.labs.kotlin.coroutines.CoroutinesBasicLab
+import com.ysm.techatlas.labs.kotlin.coroutines.CpsAndStateMachineLab
 
 /**
  * 纯 Kotlin JVM 运行入口
@@ -15,14 +17,20 @@ import com.ysm.techatlas.labs.kotlin.oop.OopLab
 fun main() {
     println(">>> Starting Kotlin Labs Execution...\n")
 
+    // 执行协程基础相关的测试
+    // CoroutinesBasicLab.runTests()
+
+    // 执行协程底层的 CPS 与状态机观察
+    CpsAndStateMachineLab.runTests()
+
     // 执行内联机制相关的测试
-    InlineLab.runTests()
+    // InlineLab.runTests()
 
     // 执行基础语法与糖相关的测试
-    SyntaxLab.runTests()
+    // SyntaxLab.runTests()
 
     // 执行面向对象：重写与重载相关的测试
-    OopLab.runTests()
+    // OopLab.runTests()
 
     println(">>> Kotlin Labs Execution Finished.")
 }
