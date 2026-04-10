@@ -88,11 +88,15 @@ object InlineLab {
     fun runTests() {
         println("========== InlineLab Tests Start ==========")
         // 测试内联返回机制
-        testReturn()
-        
+//        testReturn()
+        executeAndSave({
+            println("========== InlineLab executeAndSave inlineBlock ==========")
+        },{
+            println("========== InlineLab executeAndSave saveBlock ==========")
+        })
         // 测试 reified
-        printType<String>() // 字节码会直接变成 println("... " + String.class.getSimpleName())
-        printType<Int>()
+//        printType<String>() // 字节码会直接变成 println("... " + String.class.getSimpleName())
+//        printType<Int>()
         println("========== InlineLab Tests End ==========\n")
     }
 
@@ -100,7 +104,7 @@ object InlineLab {
         measureTimeInline {
             println("[$TAG] Executing...")
             // 因为是 inline，这里的 return 会直接结束 testReturn 函数！这叫非局部返回。
-            return 
+            return
         }
         println("[$TAG] This line will NEVER be executed.")
     }

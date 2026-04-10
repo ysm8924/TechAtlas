@@ -119,6 +119,10 @@ object SyntaxLab {
         println("[$TAG] Create: $name, $age, $isVip")
     }
 
+    fun createUser2(name: String, age: Int = 18, isVip: Boolean = false) {
+        println("[$TAG] Create: $name, $age, $isVip")
+    }
+
     fun runTests() {
         println("========== SyntaxLab Tests Start ==========")
         testExtensionDispatch()
