@@ -11,6 +11,10 @@ import com.ysm.techatlas.labs.kotlin.classes.ObjectLab
 import com.ysm.techatlas.labs.kotlin.classes.SealedClassLab
 import com.ysm.techatlas.labs.kotlin.singleton.JavaSingletonLab
 import com.ysm.techatlas.labs.kotlin.singleton.KotlinSingletonLab
+import com.ysm.techatlas.labs.kotlin.flow.FlowBasicLab
+import com.ysm.techatlas.labs.kotlin.flow.ColdFlowAdvancedLab
+import com.ysm.techatlas.labs.kotlin.flow.FlowOperatorsLab
+import com.ysm.techatlas.labs.kotlin.flow.HotFlowLab
 import com.ysm.techatlas.labs.kotlin.coroutines.CoroutinesBasicLab
 import com.ysm.techatlas.labs.kotlin.coroutines.CpsAndStateMachineLab
 
@@ -25,9 +29,19 @@ import com.ysm.techatlas.labs.kotlin.coroutines.CpsAndStateMachineLab
 fun main() {
     println(">>> Starting Kotlin Labs Execution...\n")
 
+    // 执行 Flow 核心操作符与高频面试题实战
+    FlowOperatorsLab.runTests()
+
+    // 执行冷流的高阶操作符技巧与实战
+    // ColdFlowAdvancedLab.runTests()
+
+    // 执行 Flow 基础与热流 (StateFlow/SharedFlow) 测试
+    // FlowBasicLab.runTests()
+    // HotFlowLab.runTests()
+
     // 执行单例模式深度对比与实战
-    JavaSingletonLab.runTests()
-    KotlinSingletonLab.runTests()
+    // JavaSingletonLab.runTests()
+    // KotlinSingletonLab.runTests()
 
     // 执行现代化类系统 (Data Class, Object, Sealed Class) 相关的测试
     // DataClassLab.runTests()
