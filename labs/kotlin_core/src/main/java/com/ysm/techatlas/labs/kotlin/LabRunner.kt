@@ -3,6 +3,8 @@ package com.ysm.techatlas.labs.kotlin
 import com.ysm.techatlas.labs.kotlin.classes.DataClassLab
 import com.ysm.techatlas.labs.kotlin.classes.ObjectLab
 import com.ysm.techatlas.labs.kotlin.classes.SealedClassLab
+import com.ysm.techatlas.labs.kotlin.concurrency.CoroutinesAdvancedLab
+import com.ysm.techatlas.labs.kotlin.concurrency.scenarios.AndroidConcurrencyScenarios
 import com.ysm.techatlas.labs.kotlin.coroutines.CoroutinesBasicLab
 import com.ysm.techatlas.labs.kotlin.coroutines.CpsAndStateMachineLab
 import com.ysm.techatlas.labs.kotlin.coroutines.cancellation.CancellationRunner
@@ -31,8 +33,14 @@ import com.ysm.techatlas.labs.kotlin.typesystem.TypeSystemLab
 fun main() {
     println(">>> Starting Kotlin Labs Execution...\n")
 
+    // 执行 Android 典型异步与并发场景实战
+    AndroidConcurrencyScenarios.runTests()
+
+    // 执行协程现代化并发实战 (Mutex, async/await, Channel, Semaphore)
+    // CoroutinesAdvancedLab.runTests()
+
     // 执行 Flow 核心操作符与高频面试题实战
-    FlowOperatorsLab.runTests()
+    // FlowOperatorsLab.runTests()
 
     // 执行冷流的高阶操作符技巧与实战
     // ColdFlowAdvancedLab.runTests()
@@ -68,8 +76,8 @@ fun main() {
     // 执行协程高阶API实验室
     // FunctionsRunner.runAll()
 
-    // [本章节重点]：执行协程取消机制实验室
-    CancellationRunner.runAll()
+    // 执行协程取消机制实验室
+    // CancellationRunner.runAll()
 
     // 执行内联机制相关的测试
     // InlineLab.runTests()
