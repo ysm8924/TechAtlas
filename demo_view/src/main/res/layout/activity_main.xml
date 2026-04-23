@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FAF7">
+
+
+    <!-- 全屏半透明背景的 LoadingView -->
+    <com.luckydog.walasts.view.CircleLoadingView
+        android:id="@+id/circleLoadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:clv_baseRadius="1dp"
+        app:clv_bgColor="#CC104625"
+        app:clv_circleCount="10"
+        app:clv_color="#11D344"
+        app:clv_radiusIncrement="0.8dp"
+        app:clv_ringRadius="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="正在加载数据..."
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

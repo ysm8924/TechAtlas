@@ -26,6 +26,7 @@ include(":core:network")
 include(":core:ui")
 include(":labs:java_core")
 include(":labs:kotlin_core")
+include(":demo_view")
 
 // Architecture Demos
 include(":architecture_demos:demo_arch_ca")

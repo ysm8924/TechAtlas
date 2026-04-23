@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleLoadingView">
+        <attr name="clv_color" format="color" />
+        <attr name="clv_circleCount" format="integer" />
+        <attr name="clv_baseRadius" format="dimension" />
+        <attr name="clv_radiusIncrement" format="dimension" />
+        <attr name="clv_ringRadius" format="dimension" />
+        <attr name="clv_bgColor" format="color" />
+    </declare-styleable>
+</resources>
