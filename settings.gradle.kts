@@ -31,3 +31,6 @@ include(":labs:kotlin_core")
 include(":architecture_demos:demo_arch_ca")
 include(":architecture_demos:demo_arch_mvi")
 include(":architecture_demos:demo_arch_mvvm")
+
+// Framework Learning
+include(":framework-learning")
